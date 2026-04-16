@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Tentang Kami</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO */
+.hero-about {
+    background: linear-gradient(135deg, rgba(91, 182, 63, 0.95), rgba(255, 214, 63, 0.95));
+    height: 50vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* SECTION SPACING */
+.section {
+    padding: 60px 0;
+    background: #f5f7df;
+}
+
+/* CARD STYLE */
+.info-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-8px);
+}
+
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navbar-brand img.brand-logo {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffeb3b !important;
+    transform: translateY(-1px);
+}
+
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.basket-img {
+    object-position: center top;
+}
+
+/* ANIMATION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.8s;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <img src="assets/img/SMAKSTALOGO.jpg.png" alt="Logo SMAK Santo Stanislaus" class="brand-logo">
+            <span>SMAK Santo Stanislaus</span>
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li><a class="nav-link" href="index.html">Beranda</a></li>
+                <li><a class="nav-link active" href="about.html">Tentang</a></li>
+                <li><a class="nav-link" href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-about">
+    <div class="container">
+        <h1 class="display-5 fw-bold">Tentang Ekstrakurikuler</h1>
+        <p class="lead">SMAK Santo Stanislaus</p>
+    </div>
+</section>
+
+<!-- SEJARAH -->
+<section class="section">
+    <div class="container fade-in">
+        <h2 class="text-center mb-4">Sejarah</h2>
+        <p class="text-center w-75 mx-auto">
+            Ekstrakurikuler SMAK Santo Stanislaus dibentuk sebagai wadah pengembangan potensi siswa
+            dalam bidang akademik maupun non-akademik, serta membangun karakter disiplin, tanggung jawab,
+            dan kerja sama.
+        </p>
+    </div>
+</section>
+
+<!-- VISI MISI -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-5 fade-in">Visi & Misi</h2>
+
+        <div class="row">
+
+            <div class="col-md-6 fade-in">
+                <div class="card info-card p-4">
+                    <h4 class="text-primary">Visi</h4>
+                    <p>Menjadi organisasi yang unggul dalam pengembangan bakat, minat, dan karakter siswa.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 fade-in">
+                <div class="card info-card p-4">
+                    <h4 class="text-success">Misi</h4>
+                    <ul>
+                        <li>Mengembangkan kreativitas siswa</li>
+                        <li>Meningkatkan kerja sama tim</li>
+                        <li>Mendorong prestasi di berbagai bidang</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- DAFTAR EKSTRAKURIKULER -->
+<section class="section">
+    <div class="container">
+        <h2 class="text-center mb-5 fade-in">Daftar Ekstrakurikuler</h2>
+
+        <div class="row">
+
+            <!-- BASKET -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/basket.jpg.png" class="card-img-top basket-img">
+                    <div class="card-body">
+                        <h5>Basket</h5>
+                        <p><strong>Pengajar:</strong> Yoh. Baptista Dalau Wolo, S.Pd</p>
+                        <p><strong>Jadwal:</strong> Senin, 15.00–17.00 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PADUAN SUARA -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/paduansuara.jpg.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Paduan Suara</h5>
+                        <p><strong>Pengajar:</strong> Johanes Fiadeni Nabu, S.Fil, M.Psi</p>
+                        <p><strong>Jadwal:</strong> Kamis, 14.30–16.00 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MATH SCIENCE -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/mathsains.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Math & Science Club</h5>
+                        <p><strong>Pengajar:</strong> Magdalena Iriani Kehi, S.Pd</p>
+                        <p><strong>Jadwal:</strong> Kamis, 14.30–15.30 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BADMINTON -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/badminton.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Badminton</h5>
+                        <p><strong>Pengajar:</strong> Delmon Dadi, S.Pd</p>
+                        <p><strong>Jadwal:</strong> Senin, 14.30–16.30 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SENI LUKIS -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/senilukis.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Seni Lukis</h5>
+                        <p><strong>Pengajar:</strong> Wijie Utomo, S.Sn</p>
+                        <p><strong>Jadwal:</strong> Rabu, 15.00–16.00 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MODERN DANCE -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/Dance.jpg.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Modern Dance</h5>
+                        <p><strong>Pengajar:</strong> Eza Rizaldi</p>
+                        <p><strong>Jadwal:</strong> Rabu, 14.30–16.00 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ARC -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/ARC.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>ARC (Computer Club)</h5>
+                        <p><strong>Pengajar:</strong> Slamat Winardi, S.T., M.T.</p>
+                        <p><strong>Jadwal:</strong> Selasa, 15.00–16.30 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PDC -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/PDC.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>PDC</h5>
+                        <p><strong>Pengajar:</strong> Mr. Paul</p>
+                        <p><strong>Jadwal:</strong> Rabu, 14.30–16.00 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FUTSAL -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/futsal.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Futsal</h5>
+                        <p><strong>Pengajar:</strong> B. Dhamar Listya Suwardi, S.Pd</p>
+                        <p><strong>Jadwal:</strong> Selasa, 15.00–17.00 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRAMUKA -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/pramuka.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Pramuka</h5>
+                        <p><strong>Pengajar:</strong> Oktavianus Adhi Nugroho, S.Pd</p>
+                        <p><strong>Jadwal:</strong> Kamis, 14.30–15.30 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VOLI -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/voli.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Voli</h5>
+                        <p><strong>Pengajar:</strong> Frederic Douglas Mardonaldo W. T.</p>
+                        <p><strong>Jadwal:</strong> Rabu, 15.00–17.00 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COOKING -->
+            <div class="col-md-4 mb-4 fade-in">
+                <div class="card info-card h-100">
+                    <img src="assets/img/Cooking.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Cooking Class</h5>
+                        <p><strong>Pengajar:</strong> Christiana Asdhi Sadewi, M.Pd</p>
+                        <p><strong>Jadwal:</strong> Rabu, 15.00–16.30 WIB</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- INTERAKTIF (TAB DIVISI) -->
+<section class="section">
+    <div class="container text-center">
+        <h2 class="mb-5 fade-in">Mengapa Bergabung?</h2>
+
+        <div class="row">
+
+            <div class="col-md-4 fade-in">
+                <div class="info-card p-4">
+                    <h5>Pengembangan Diri</h5>
+                    <p>Meningkatkan kemampuan dan potensi siswa di berbagai bidang.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 fade-in">
+                <div class="info-card p-4">
+                    <h5>Kerja Sama Tim</h5>
+                    <p>Melatih kolaborasi dan komunikasi antar siswa.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 fade-in">
+                <div class="info-card p-4">
+                    <h5>Prestasi</h5>
+                    <p>Mendorong siswa untuk berprestasi di tingkat sekolah maupun luar sekolah.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-4">
+    <p>© 2026 SMAK Santo Stanislaus</p>
+    <p>Made by Kenzie Ethaniel Hardy | 12 TIK A</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const fade = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+    fade.forEach(el => {
+        if(el.getBoundingClientRect().top < window.innerHeight - 100){
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>

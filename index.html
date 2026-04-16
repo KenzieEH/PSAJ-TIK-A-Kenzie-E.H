@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Ekskul SMAK Santo Stanislaus</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+/* FONT & GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('assets/img/sekolah.jpg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* efek parallax */
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* CARD HOVER EFFECT */
+.card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+
+.navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.navbar-brand img.brand-logo {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+}
+
+.navbar-nav .nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #f8d613 !important;
+    transform: translateY(-1px);
+}
+
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+/* ANIMATION */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* SECTION BACKGROUND */
+.section-bg {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('assets/img/sekolah.jpg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+.section-panel {
+    background-color: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.section-panel .section-divider {
+    margin-bottom: 2rem;
+}
+
+.section-bg .card {
+    background-color: rgba(255,255,255,0.95);
+    border: 1px solid rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.section-bg .card .card-body h5 {
+    display: inline-block;
+    border-bottom: 3px solid #0d6efd;
+    padding-bottom: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+.section-bg .card .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.basket-img {
+    object-position: center;
+}
+
+.section-bg .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    border-color: rgba(13,110,253,0.4);
+}
+
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: #0d6efd;
+    border: none;
+}
+
+.cta-banner {
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('assets/img/sekolah.jpg.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-banner .btn {
+    min-width: 220px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <img src="assets/img/SMAKSTALOGO.jpg.png" alt="Logo SMAK Santo Stanislaus" class="brand-logo">
+            <span>SMAK Santo Stanislaus</span>
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto">
+                <li><a class="nav-link active" href="index.html">Beranda</a></li>
+                <li><a class="nav-link" href="about.html">Tentang</a></li>
+                <li><a class="nav-link" href="contact.html">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Ekstrakurikuler SMAK Santo Stanislaus</h1>
+        <p class="lead">Wadah pengembangan bakat, minat, dan karakter siswa</p>
+        <a href="about.html" class="btn btn-primary btn-lg mt-3">Pelajari Lebih Lanjut</a>
+    </div>
+</section>
+
+<!-- KEGIATAN -->
+<section class="section-bg py-5">
+    <div class="container">
+        <div class="section-panel">
+            <h2 class="text-center mb-4">Ekstrakurikuler Kami</h2>
+            <hr class="section-divider mx-auto mb-5">
+
+            <div class="row g-4">
+
+            <div class="col-md-4 fade-in">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/basket.jpg.png" alt="Ekstrakurikuler Basket" class="card-img-top basket-img" onerror="this.onerror=null; this.src='assets/img/sekolah.jpg.jpeg';">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Basket</h5>
+                        <p class="text-muted">Latihan rutin dan kompetisi antar sekolah.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 fade-in">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/paduansuara.jpg.jpg" alt="Ekstrakurikuler Paduan Suara" class="card-img-top" onerror="this.onerror=null; this.src='assets/img/sekolah.jpg.jpeg';">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">Paduan Suara</h5>
+                        <p class="text-muted">Mengembangkan kemampuan vokal dan harmoni.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 fade-in">
+                <div class="card h-100 border-0 shadow-sm">
+                    <img src="assets/img/ARC.jpg" alt="Ekstrakurikuler ARC" class="card-img-top" onerror="this.onerror=null; this.src='assets/img/sekolah.jpg.jpeg';">
+                    <div class="card-body text-center">
+                        <h5 class="fw-bold">ARC (Computer Club)</h5>
+                        <p class="text-muted">Belajar coding, robotic, dan teknologi modern.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="text-center mt-5">
+            <div class="cta-banner">
+                <a href="about.html" class="btn btn-primary btn-lg px-4">
+                    Lihat Semua Ekstrakurikuler
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-4">
+    <p>© 2026 SMAK Santo Stanislaus</p>
+    <p>Made by Kenzie Ethaniel Hardy | 12 TIK A</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ANIMATION SCRIPT -->
+<script>
+const elements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        const screen = window.innerHeight;
+
+        if(position < screen - 100){
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
